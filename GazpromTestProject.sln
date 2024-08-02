@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazpromTestProject", "GazpromTestProject\GazpromTestProject.csproj", "{FE9E1D99-2AF7-4DCC-9F5E-B16B8C31BEF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbContext", "DbContext\DbContext.csproj", "{14995058-B84C-4034-9095-32EE7E17B497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{448E4D9B-F729-4227-BEA8-ADDFF22501D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE9E1D99-2AF7-4DCC-9F5E-B16B8C31BEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9E1D99-2AF7-4DCC-9F5E-B16B8C31BEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9E1D99-2AF7-4DCC-9F5E-B16B8C31BEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9E1D99-2AF7-4DCC-9F5E-B16B8C31BEF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14995058-B84C-4034-9095-32EE7E17B497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14995058-B84C-4034-9095-32EE7E17B497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14995058-B84C-4034-9095-32EE7E17B497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14995058-B84C-4034-9095-32EE7E17B497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448E4D9B-F729-4227-BEA8-ADDFF22501D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448E4D9B-F729-4227-BEA8-ADDFF22501D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448E4D9B-F729-4227-BEA8-ADDFF22501D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448E4D9B-F729-4227-BEA8-ADDFF22501D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {398F60E3-A6E6-4DEA-96F3-11243648B66A}
+	EndGlobalSection
+EndGlobal
