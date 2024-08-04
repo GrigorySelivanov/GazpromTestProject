@@ -18,7 +18,7 @@ namespace GazpromTestProject.Controllers
         [HttpGet("popular")]
         public async Task<IActionResult> GetPopular()
         {
-            var providers = await _providerService.GetPopular();
+            var providers = await _providerService.GetPopularAsync();
             var providersDTOs = providers.Select(p => _mapper.Map<PopularProviderGetDTO>(p)).ToList();
             return Ok(providersDTOs);
         }
@@ -26,7 +26,7 @@ namespace GazpromTestProject.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var offer = await _providerService.GetProviderByIdAsync(id, isTraking: false);
+            var offer = await _providerService.GetProviderByIdAsync(id);
             if (offer == null) return NotFound("Поставщик не найден");
 
             return Ok(_mapper.Map<ProviderGetDTO>(offer));

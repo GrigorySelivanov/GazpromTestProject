@@ -11,14 +11,8 @@ namespace GazpromTestProject.Services
     {
         private readonly ProviderRepository _providerRepository = providerRepository;
 
-        public async Task<Provider?> GetProviderByIdAsync(int id, string? includeProp = null, bool isTraking = true) =>
-            await _providerRepository.FirstOrDefaultAsync(o => o.Id == id, includeProp, isTraking);
-
-        public async Task<IEnumerable<Provider>> GetAllAsync(Expression<Func<Provider, bool>>? filter = null,
-                                                          string? includeProp = null, bool isTraking = true)
-        {
-            return await _providerRepository.GetAllAsync(filter: filter, includeProp: includeProp);
-        }
+        public async Task<Provider?> GetProviderByIdAsync(int id) =>
+            await _providerRepository.FirstOrDefaultAsync(o => o.Id == id, isTraking: false);
 
         public Provider CreateProvider(ProviderCreateDTO model)
         {
@@ -33,7 +27,7 @@ namespace GazpromTestProject.Services
             return provider;
         }
 
-        public async Task<List<Provider>> GetPopular() =>
+        public async Task<List<Provider>> GetPopularAsync() =>
             await _providerRepository.GetPopularAsync(3);
     }
 }

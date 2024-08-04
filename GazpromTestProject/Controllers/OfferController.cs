@@ -28,7 +28,7 @@ namespace GazpromTestProject.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var offer = await _offerService.GetOfferByIdAsync(id, includeProp: "Provider", isTraking: false);
+            var offer = await _offerService.GetOfferByIdAsync(id);
             if (offer == null) return NotFound("Оффер не найден");
 
             return Ok(_mapper.Map<OfferGetDTO>(offer));

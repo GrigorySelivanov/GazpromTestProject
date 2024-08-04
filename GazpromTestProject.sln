@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazpromTestProject", "GazpromTestProject\GazpromTestProject.csproj", "{FE9E1D99-2AF7-4DCC-9F5E-B16B8C31BEF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GazpromTestProject", "GazpromTestProject\GazpromTestProject.csproj", "{FE9E1D99-2AF7-4DCC-9F5E-B16B8C31BEF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbContext", "DbContext\DbContext.csproj", "{14995058-B84C-4034-9095-32EE7E17B497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbContext", "DbContext\DbContext.csproj", "{14995058-B84C-4034-9095-32EE7E17B497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{448E4D9B-F729-4227-BEA8-ADDFF22501D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{448E4D9B-F729-4227-BEA8-ADDFF22501D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

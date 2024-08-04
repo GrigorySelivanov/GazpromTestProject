@@ -16,15 +16,8 @@ namespace GazpromTestProject.Services
         private readonly IProviderService _providerService = providerService;
 
 
-        public async Task<Offer?> GetOfferByIdAsync(int id, string? includeProp = null, bool isTraking = true) =>
-            await _offerRepository.FirstOrDefaultAsync(o => o.Id == id, includeProp, isTraking);
-
-        public async Task<IEnumerable<Offer>> GetAllAsync(Expression<Func<Offer, bool>>? filter = null,
-                                                          string? includeProp = null, bool isTraking = true)
-        {
-            return await _offerRepository.GetAllAsync(filter: filter, includeProp: includeProp);
-        }
-                
+        public async Task<Offer?> GetOfferByIdAsync(int id) =>
+            await _offerRepository.FirstOrDefaultAsync(o => o.Id == id, "Provider", false);             
 
         public async Task<Offer> CreateOfferAsync(OfferCreateDTO model)
         {
